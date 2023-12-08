@@ -1,0 +1,16 @@
+using System;
+
+public class Reception : Event
+{
+    private string _email;
+
+    public Reception(string type, string title, string description, string date, string time, Address address, string email) : base(type, title, description, date, time, address)
+    {
+        _email = email;
+    }
+
+    public void DisplayFullDetails()
+    {
+        Console.WriteLine($"Event Type: {_type} \nTitle: {_title} \nDescription: {_description} \nDate: {_date} \nTime: {_time} \nAddress: {_address} \nEmail: {_email}");
+    }
+}
