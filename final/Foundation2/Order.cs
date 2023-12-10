@@ -16,10 +16,10 @@ public class Order
 
     public void DisplayPackagingLabel()
     {
-        Console.WriteLine("\nItem | Price | Product ID | Quantity");
+        Console.WriteLine("\n|  Item  |  Price  |  Product ID  |  Quantity  |");
         foreach (Product product in _products)
         {
-           Console.WriteLine($"{product.GetName()} | {product.GetPrice()} | {product.GetProductId()} | {product.GetQuantity()}");
+           Console.WriteLine($"| { product.GetName()} |  {product.GetPrice()}   |      {product.GetProductId()}      |     {product.GetQuantity()}      |");
         }
     }
 
